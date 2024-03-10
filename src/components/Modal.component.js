@@ -25,7 +25,7 @@ import {
 } from "@chakra-ui/icons";
 import React, { useEffect, useState } from "react";
 import { data } from "../pages/home";
-import StatusComponent, { Statues } from "./Status.component";
+import StatusComponent, { Statuses } from "./Status.component";
 import dayjs from "dayjs";
 import MarkdownEditor from "@uiw/react-markdown-editor";
 import { useModalStore } from "../stores/modal.store";
@@ -93,7 +93,7 @@ const ModalComponent = () => {
                       w={"25%"}
                     >
                       <option>Select Status</option>
-                      {Object.keys(Statues).map((k, i) => (
+                      {Object.keys(Statuses).map((k, i) => (
                         <option key={i} value={k}>
                           {k}
                         </option>

@@ -1,6 +1,6 @@
 import { Button, Flex, Heading, Highlight } from "@chakra-ui/react";
 import React from "react";
-import { useModalStore } from "../stores/model.store";
+import { useModalStore } from "../stores/modal.store";
 
 const HeadingComponent = ({ title }) => {
   const titleSplit = title.split(" ");
